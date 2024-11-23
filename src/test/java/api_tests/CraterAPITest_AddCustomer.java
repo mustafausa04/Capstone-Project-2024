@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 import java.util.HashMap;
 import java.util.Map;
 
+
 public class CraterAPITest_AddCustomer {
 
     //this is another API ex so first thing you need to do is to go look at the documentation or AC in the website
