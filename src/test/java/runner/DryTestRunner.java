@@ -27,8 +27,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(features = "src/test/resources/features/",//here we will specify to execute
                                                //(User_Access.feature) file only not all files inside(features)
         glue = "stepdefinitions",
-        plugin = {"pretty" ,"html:target/primetech-report.html"}, //this is to generate a report for us since it
-                                                                //has 2 values then we need to put them in { }
+        plugin = {"pretty", "html:target/primetech-report.html", //this is to generate a report for us since it
+                "json:target/primetech-report.json"}, //has 4 values then we need to put them in { }
         dryRun = true //this will compare the steps we have in the (User_Access.feature) file to the
                       //(stepdefinitions) files and if nothing matches it will generate steps for you, so dryRun
                       //doesn't execute the code inside the steps that are in the (stepDefinitions) files, it
